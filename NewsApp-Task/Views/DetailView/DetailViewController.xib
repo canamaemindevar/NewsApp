@@ -38,10 +38,10 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rmp-E1-yU1">
-                            <rect key="frame" x="31" y="407" width="352" height="81.5"/>
+                            <rect key="frame" x="0.0" y="407" width="414" height="81.5"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qlU-qS-LIi" userLabel="Dummy">
-                                    <rect key="frame" x="0.0" y="0.0" width="352" height="81.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="81.5"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jsV-By-qwb">
                                             <rect key="frame" x="17" y="12" width="72.5" height="57.5"/>
@@ -52,7 +52,7 @@
                                             <imageReference key="image" image="chart.bar.doc.horizontal.fill" catalog="system" symbolScale="small"/>
                                         </imageView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="siS-co-eC0">
-                                            <rect key="frame" x="176" y="12.5" width="72.5" height="56"/>
+                                            <rect key="frame" x="207" y="12.5" width="72.5" height="56"/>
                                             <color key="tintColor" systemColor="systemGray2Color"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="siS-co-eC0" secondAttribute="height" multiplier="72:61" id="mfk-3Y-Egb"/>
@@ -60,13 +60,13 @@
                                             <imageReference key="image" image="calendar" catalog="system" symbolScale="small"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfM-1u-TEV">
-                                            <rect key="frame" x="97.5" y="10" width="78.5" height="61.5"/>
+                                            <rect key="frame" x="97.5" y="10" width="109.5" height="61.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReU-ag-mTK">
-                                            <rect key="frame" x="264.5" y="10" width="79.5" height="61.5"/>
+                                            <rect key="frame" x="295.5" y="10" width="110.5" height="61.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -124,7 +124,6 @@
                         <constraint firstItem="wbo-td-vXX" firstAttribute="height" secondItem="P59-pR-Hvv" secondAttribute="height" multiplier="0.35" id="EtD-6z-5Y8"/>
                         <constraint firstItem="3MM-a3-DbT" firstAttribute="centerX" secondItem="P59-pR-Hvv" secondAttribute="centerX" id="GsQ-Oh-Ulj"/>
                         <constraint firstItem="Rmp-E1-yU1" firstAttribute="top" secondItem="3MM-a3-DbT" secondAttribute="bottom" id="GwR-TE-U48"/>
-                        <constraint firstItem="Rmp-E1-yU1" firstAttribute="width" secondItem="P59-pR-Hvv" secondAttribute="width" multiplier="0.85" id="HFc-5r-ogc"/>
                         <constraint firstItem="wbo-td-vXX" firstAttribute="top" secondItem="P59-pR-Hvv" secondAttribute="top" id="Qi8-4a-Tos"/>
                         <constraint firstItem="aoY-v8-cH7" firstAttribute="top" secondItem="Rmp-E1-yU1" secondAttribute="bottom" id="SP7-gj-jnb"/>
                         <constraint firstAttribute="trailing" secondItem="3MM-a3-DbT" secondAttribute="trailing" constant="8" id="TqI-a9-29f"/>
