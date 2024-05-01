@@ -10,8 +10,7 @@ import UIKit
 final class MainViewController: BaseViewController {
     
     var pageChoice: DataSourceForMainView
-    
-    
+
     var newsArray: [Article]? {
         didSet {
             DispatchQueue.main.async {
@@ -19,8 +18,7 @@ final class MainViewController: BaseViewController {
             }
         }
     }
-    
-    
+
     //MARK: - Components
     
     private let tableView: UITableView = {
@@ -56,13 +54,10 @@ final class MainViewController: BaseViewController {
         if pageChoice == .FavoritePage {
             LocalDBManager.shared.fetchModel(completion: handleNewsResponse(response:))
         }
-        
-        
     }
     override func viewWillLayoutSubviews() {
         self.tableView.frame = view.bounds
     }
-
 }
 
 //MARK: - Private Functions
@@ -81,9 +76,7 @@ private extension MainViewController {
         } else {
             LocalDBManager.shared.fetchModel(completion: handleNewsResponse(response:))
         }
-        
     }
-
     
     func makeSearchBar() {
         navigationItem.searchController = searchVc
@@ -119,9 +112,7 @@ extension MainViewController: UITableViewDelegate {
 
 extension MainViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return newsArray?.count ?? 5
-      
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

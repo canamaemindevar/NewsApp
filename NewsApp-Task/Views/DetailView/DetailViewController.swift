@@ -34,16 +34,13 @@ final class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNew()
-        
-        
     }
-    
+
     @IBAction func segueToWebView(_ sender: UIButton) {
         guard let newsUrl = article.url else {return}
         let webVc = WebViewController(newsUrl: newsUrl)
         self.navigationController?.pushViewController(webVc, animated: true)
     }
-   
 }
 //MARK: - Private funcs
 private extension DetailViewController {
@@ -51,7 +48,7 @@ private extension DetailViewController {
         self.newsTitle.text = article.title
         self.newsImageView.setImage(article.urlToImage)
         self.newsAuthorLabel.text = article.author
-        self.newsDateLabel.text = article.publishedAt
+        self.newsDateLabel.text = formatDate(date: article.publishedAt)
         if article.description == nil {
             self.newsDetailTextView.text = "Details are coming soon"
         } else {
@@ -76,9 +73,9 @@ private extension DetailViewController {
                  
                  guard let articless = success.articles else {return}
                  if self.containsArticle(articless, self.article) {
-        
-                     //TODO: delete fav article
-                     
+
+                     LocalDBManager.shared.deleteModel(with: self.article)
+
                  }else {
                      LocalDBManager.shared.saveModel(with: self.article)
                  }
@@ -90,8 +87,6 @@ private extension DetailViewController {
 
     }
     
-    
-    
   private  func containsArticle(_ array: [Article], _ search: Article) -> Bool {
         for art in array {
             if art.title == search.title && art.url == search.url {
@@ -100,4 +95,20 @@ private extension DetailViewController {
         }
         return false
     }
+
+    private func formatDate(date: String?) -> String? {
+        guard let dateString = date else { return nil }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        dateFormatter.locale = Locale(identifier: "tr_TR")
+
+        guard let inputDate = dateFormatter.date(from: dateString) else {
+            return nil
+        }
+        let outputFormatter = DateFormatter()
+        outputFormatter.locale = Locale(identifier: "tr_TR")
+        outputFormatter.dateFormat = "dd MMMM yyyy, HH:mm:ss"
+        return outputFormatter.string(from: inputDate)
+    }
+
 }

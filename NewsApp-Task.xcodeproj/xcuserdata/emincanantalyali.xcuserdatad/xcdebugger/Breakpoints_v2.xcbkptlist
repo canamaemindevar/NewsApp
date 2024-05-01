@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "666C8E2C-DA33-4CAA-AAE0-050828C2B593"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "041D898F-A505-46AC-8CF7-F69530573181"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
@@ -65,6 +65,36 @@
                   endingLineNumber = "27"
                   offsetFromSymbolStart = "616">
                </Location>
+               <Location
+                  uuid = "041D898F-A505-46AC-8CF7-F69530573181 - bfd78a3a61baf35b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in NewsApp_Task.NewNetworkManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(_: NewsApp_Task.Endpoint, completion: (Swift.Result&lt;&#x3c4;_0_0, NewsApp_Task.NewsAppErrors&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "041D898F-A505-46AC-8CF7-F69530573181 - bfd78a3a61baf35b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in NewsApp_Task.NewNetworkManager.request&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(_: NewsApp_Task.Endpoint, completion: (Swift.Result&lt;&#x3c4;_0_0, NewsApp_Task.NewsAppErrors&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "644">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -88,7 +118,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A8DD806C-B275-4D3D-9E25-A7BFFC5235B1"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
@@ -161,6 +191,21 @@
                   endingLineNumber = "52"
                   offsetFromSymbolStart = "860">
                </Location>
+               <Location
+                  uuid = "BA79F1F6-76D2-4B1D-9FD2-E02078C32CAC - ab5d9485c7f41ea4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.NewNetworkManager.handleResponse&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable, &#x3c4;_0_0: Swift.Encodable&gt;(data: Foundation.Data, compeltion: (Swift.Result&lt;&#x3c4;_0_0, NewsApp_Task.NewsAppErrors&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "464">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -177,6 +222,22 @@
             startingLineNumber = "78"
             endingLineNumber = "78"
             landmarkName = "request()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "135B6C9E-6203-45F7-844F-841462A261FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Managers/LocalDBManager/LocalDBManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "saveModel(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
