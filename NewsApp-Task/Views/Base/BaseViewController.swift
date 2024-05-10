@@ -9,10 +9,12 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .cyan
     }
-   
+    deinit {
+        let type = Swift.type(of: self)
+        print("\(type) DEALLOCATED")
+    }
 }

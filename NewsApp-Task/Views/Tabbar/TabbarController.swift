@@ -13,7 +13,10 @@ class TabbarController: UITabBarController {
         super.viewDidLoad()
 
         let newsVC = MainViewController(pageChoice: .SearchPage)
+        let newsVm = MainViewModel()
+        newsVC.viewModel = newsVm
         let favVC = MainViewController(pageChoice: .FavoritePage)
+        favVC.viewModel = newsVm
         let newsNc = UINavigationController(rootViewController: newsVC)
         let favNC = UINavigationController(rootViewController: favVC)
         

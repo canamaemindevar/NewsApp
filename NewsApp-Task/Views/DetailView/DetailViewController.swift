@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class DetailViewController: UIViewController {
-    
+final class DetailViewController: ViewController<DetailViewModel> {
+
     //MARK: - Components
     
     @IBOutlet weak var newsDateLabel: UILabel!
@@ -66,34 +66,7 @@ private extension DetailViewController {
     }
     
     @objc private func makeFav() {
-        
-         LocalDBManager.shared.fetchModel(completion: { response in
-             switch response {
-             case .success(let success):
-                 
-                 guard let articless = success.articles else {return}
-                 if self.containsArticle(articless, self.article) {
-
-                     LocalDBManager.shared.deleteModel(with: self.article)
-
-                 }else {
-                     LocalDBManager.shared.saveModel(with: self.article)
-                 }
-                 
-             case .failure(_):
-                break
-             }
-        })
-
-    }
-    
-  private  func containsArticle(_ array: [Article], _ search: Article) -> Bool {
-        for art in array {
-            if art.title == search.title && art.url == search.url {
-                return true
-            }
-        }
-        return false
+        viewModel?.makeFav(article: self.article)
     }
 
     private func formatDate(date: String?) -> String? {

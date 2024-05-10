@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class MainViewController: BaseViewController {
-    
+final class MainViewController: ViewController<MainViewModel> {
+
     var pageChoice: DataSourceForMainView
 
     var newsArray: [Article]? {
@@ -37,9 +37,8 @@ final class MainViewController: BaseViewController {
     init(pageChoice: DataSourceForMainView) {
         self.pageChoice = pageChoice
         super.init(nibName: nil, bundle: nil)
-       
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -47,12 +46,14 @@ final class MainViewController: BaseViewController {
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        initBindings()
         setPage()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if pageChoice == .FavoritePage {
-            LocalDBManager.shared.fetchModel(completion: handleNewsResponse(response:))
+            viewModel?.getFavsFromDb()
         }
     }
     override func viewWillLayoutSubviews() {
@@ -63,34 +64,33 @@ final class MainViewController: BaseViewController {
 //MARK: - Private Functions
 
 private extension MainViewController {
-    
+
+    func initBindings() {
+        viewModel?.succesCompletion = { [weak self] success in
+            self?.newsArray = success.articles
+        }
+        viewModel?.failCompleetion = { [weak self]  in
+            ErroHandleViewBuilder.showError(from: self)
+        }
+    }
+
     func setPage() {
         tableView.delegate = self
         tableView.dataSource = self
         title = pageChoice.setTitle()
         view.addSubview(tableView)
-        
+
         if pageChoice == .SearchPage {
             makeSearchBar()
-            NewNetworkManager.shared.getHeadLines(completion: handleNewsResponse(response:))
+            viewModel?.getHeadlines()
         } else {
-            LocalDBManager.shared.fetchModel(completion: handleNewsResponse(response:))
+            viewModel?.getFavsFromDb()
         }
     }
-    
+
     func makeSearchBar() {
         navigationItem.searchController = searchVc
         searchVc.searchBar.delegate = self
-    }
-    
-    func handleNewsResponse(response: Result<NewsResponse, NewsAppErrors>) {
-        switch response {
-        case .success(let success):
-            print(success)
-            self.newsArray = success.articles
-        case .failure(let failure):
-            print(failure)
-        }
     }
 }
 
@@ -102,6 +102,7 @@ extension MainViewController: UITableViewDelegate {
         guard let arr = newsArray else {return}
         let article = arr[indexPath.row] 
         let detailVc = DetailViewController(article: article)
+        detailVc.viewModel = DetailViewModel()
         self.navigationController?.pushViewController(detailVc, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -128,9 +129,9 @@ extension MainViewController: UITableViewDataSource {
 //MARK: - SearchBar Delegate
 
 extension MainViewController: UISearchBarDelegate {
+
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
         guard let text = searchBar.text, !text.isEmpty else {return }
-        NewNetworkManager.shared.makeQuery(word: text, completion: handleNewsResponse(response:))
+        viewModel?.makeQuery(text: text)
     }
 }

@@ -102,7 +102,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F69F7C6E-D8FC-4DCA-BAAA-ECA24F52A8C0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
@@ -134,7 +134,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E9C1D9C0-8E09-40DF-9EB8-8F07CF093933"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
@@ -150,7 +150,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BA79F1F6-76D2-4B1D-9FD2-E02078C32CAC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
@@ -237,8 +237,447 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "saveModel(with:)"
+            landmarkName = "LocalDBManager"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0969DBFA-4ED1-49A3-9E69-AF79DD251141"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Views/MainView/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "setPage()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0969DBFA-4ED1-49A3-9E69-AF79DD251141 - 1b09eeeedf772c02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewController.setPage() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "740">
+               </Location>
+               <Location
+                  uuid = "0969DBFA-4ED1-49A3-9E69-AF79DD251141 - 1b09eeeedf772c21"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewController.setPage() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "740">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B8B1F406-45BB-49C6-BB8D-AA84B4DAF51E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Views/MainView/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getHeadlines()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B8B1F406-45BB-49C6-BB8D-AA84B4DAF51E - fff802de4a54b0b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "B8B1F406-45BB-49C6-BB8D-AA84B4DAF51E - 6c564f50dea82d14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "B8B1F406-45BB-49C6-BB8D-AA84B4DAF51E - fbd029ea1036ffd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewModel.getHeadlines() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98DB41E2-73CB-42FE-9F2F-5FB98C7288D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Views/MainView/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "setPage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "98DB41E2-73CB-42FE-9F2F-5FB98C7288D5 - 1b09eeeedf772c40"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewController.setPage() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "860">
+               </Location>
+               <Location
+                  uuid = "98DB41E2-73CB-42FE-9F2F-5FB98C7288D5 - 1b09eeeedf772c9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewController.setPage() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "85"
+                  endingLineNumber = "85"
+                  offsetFromSymbolStart = "860">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BAE800BA-9E46-42BC-847A-EBA340511FAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Views/MainView/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getHeadlines()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BAE800BA-9E46-42BC-847A-EBA340511FAC - 6c564f50dea82d14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "BAE800BA-9E46-42BC-847A-EBA340511FAC - 6c564f50dea82d14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "BAE800BA-9E46-42BC-847A-EBA340511FAC - 6c564f50dea82d14"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "BAE800BA-9E46-42BC-847A-EBA340511FAC - fbd029ea1036ffd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewModel.getHeadlines() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "BAE800BA-9E46-42BC-847A-EBA340511FAC - bebacac951f1173c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.getHeadlines() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "BAE800BA-9E46-42BC-847A-EBA340511FAC - fbd029ea1036ffd4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewModel.getHeadlines() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "64AB33AF-02C8-43E1-90D4-C54D3663B9F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "getHeadLines(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C40767D4-4DA5-4CA8-A9D6-1DEC56D95F37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Views/MainView/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "initBindings()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C40767D4-4DA5-4CA8-A9D6-1DEC56D95F37 - 39384eb2ee13f1a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewController.initBindings() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "C40767D4-4DA5-4CA8-A9D6-1DEC56D95F37 - afa0cbe21dd8265e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NewsApp_Task.NewsResponse) -&gt; () in NewsApp_Task.MainViewController.initBindings() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "C40767D4-4DA5-4CA8-A9D6-1DEC56D95F37 - 39384eb2ee13f18b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewController.initBindings() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "C40767D4-4DA5-4CA8-A9D6-1DEC56D95F37 - afa0cbe21dd8267d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NewsApp_Task.NewsResponse) -&gt; () in NewsApp_Task.MainViewController.initBindings() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "C40767D4-4DA5-4CA8-A9D6-1DEC56D95F37 - 39384eb2ee13f149"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewsApp_Task.MainViewController.initBindings() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "C40767D4-4DA5-4CA8-A9D6-1DEC56D95F37 - afa0cbe21dd826bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (NewsApp_Task.NewsResponse) -&gt; () in NewsApp_Task.MainViewController.initBindings() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "32">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45AEFC4E-C5DF-45F2-AB34-F11A01CC4FB0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Views/MainView/MainViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "makeQuery(text:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "45AEFC4E-C5DF-45F2-AB34-F11A01CC4FB0 - 6c564f50dea82b6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "56"
+                  endingLineNumber = "56"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "45AEFC4E-C5DF-45F2-AB34-F11A01CC4FB0 - 6c564f50dea82dd6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
