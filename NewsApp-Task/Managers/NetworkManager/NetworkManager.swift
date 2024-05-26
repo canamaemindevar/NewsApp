@@ -17,7 +17,7 @@ class NewNetworkManager: NewNetworkManagerInterface {
     private init() {}
     
     func request<T: Codable>(_ endpoint: Endpoint,completion: @escaping((Result<T,NewsAppErrors>)->())) {
-        
+        Spinner.start()
         URLSession.shared.dataTask(with: endpoint.request()) { data,response,error in
             
             if error != nil {
@@ -39,6 +39,7 @@ class NewNetworkManager: NewNetworkManagerInterface {
                 completion(response)
                 
             }
+            Spinner.stop()
         }.resume()
     }
     

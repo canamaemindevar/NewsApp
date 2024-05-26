@@ -33,6 +33,9 @@
 		A99C89242A5BFBF600FBE166 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99C89222A5BFBF600FBE166 /* NewsTableViewCell.xib */; };
 		A99C89282A5C0BF300FBE166 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C89272A5C0BF300FBE166 /* UITableViewCell+Extensions.swift */; };
 		A99C892E2A5C147600FBE166 /* ArticleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A99C892C2A5C147600FBE166 /* ArticleModel.xcdatamodeld */; };
+		A9CEC6762C0382BD00B14804 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6752C0382BD00B14804 /* Spinner.swift */; };
+		A9CEC6792C0382F400B14804 /* ErrorHandleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6782C0382F400B14804 /* ErrorHandleView.swift */; };
+		A9CEC67B2C03831900B14804 /* ErroHandleViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC67A2C03831900B14804 /* ErroHandleViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		A99C89222A5BFBF600FBE166 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		A99C89272A5C0BF300FBE166 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		A99C892D2A5C147600FBE166 /* ArticleModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArticleModel.xcdatamodel; sourceTree = "<group>"; };
+		A9CEC6752C0382BD00B14804 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		A9CEC6782C0382F400B14804 /* ErrorHandleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandleView.swift; sourceTree = "<group>"; };
+		A9CEC67A2C03831900B14804 /* ErroHandleViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErroHandleViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,8 @@
 		A912CBA32A575CC70007863B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A9CEC6772C0382DD00B14804 /* ErrorHandleView */,
+				A9CEC6742C0382B000B14804 /* Spinner */,
 				A912CBBB2A576F860007863B /* WebView */,
 				A912CBAE2A5768590007863B /* Base */,
 				A912CBB12A5768770007863B /* DetailView */,
@@ -262,6 +270,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		A9CEC6742C0382B000B14804 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEC6752C0382BD00B14804 /* Spinner.swift */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
+		A9CEC6772C0382DD00B14804 /* ErrorHandleView */ = {
+			isa = PBXGroup;
+			children = (
+				A9CEC6782C0382F400B14804 /* ErrorHandleView.swift */,
+				A9CEC67A2C03831900B14804 /* ErroHandleViewBuilder.swift */,
+			);
+			path = ErrorHandleView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,9 +369,11 @@
 			files = (
 				A912CBC52A580FE80007863B /* NetworkManager.swift in Sources */,
 				A99C891D2A5BEDEA00FBE166 /* LocalDBManager.swift in Sources */,
+				A9CEC67B2C03831900B14804 /* ErroHandleViewBuilder.swift in Sources */,
 				A912CB922A575C5E0007863B /* MainViewController.swift in Sources */,
 				A99C892E2A5C147600FBE166 /* ArticleModel.xcdatamodeld in Sources */,
 				A99C891F2A5BFAF700FBE166 /* UITableView+Extensions.swift in Sources */,
+				A9CEC6792C0382F400B14804 /* ErrorHandleView.swift in Sources */,
 				A912CBA92A575E7F0007863B /* BaseViewController.swift in Sources */,
 				A912CBC92A5810850007863B /* NewsAppErrors.swift in Sources */,
 				A912CB8E2A575C5E0007863B /* AppDelegate.swift in Sources */,
@@ -361,6 +388,7 @@
 				A99C89232A5BFBF600FBE166 /* NewsTableViewCell.swift in Sources */,
 				A912CBC72A5810230007863B /* NetworkHelpers.swift in Sources */,
 				A912CBC22A57FD170007863B /* WebViewController.swift in Sources */,
+				A9CEC6762C0382BD00B14804 /* Spinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

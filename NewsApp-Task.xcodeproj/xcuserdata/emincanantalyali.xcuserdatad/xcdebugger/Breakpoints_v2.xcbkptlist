@@ -124,8 +124,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "handleResponse(data:compeltion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -140,8 +140,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "handleResponse(data:compeltion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -156,8 +156,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "handleResponse(data:compeltion:)"
             landmarkType = "7">
             <Locations>
