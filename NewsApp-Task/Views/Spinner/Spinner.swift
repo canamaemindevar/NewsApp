@@ -14,7 +14,7 @@ class Spinner {
     static var baseBackColor = UIColor.black.withAlphaComponent(0.4)
     static var baseColor: UIColor = .blue
 
-    static func start(style: UIActivityIndicatorView.Style = style, backColor: UIColor = baseBackColor, baseColor: UIColor = baseColor) {
+    class func start(style: UIActivityIndicatorView.Style = style, backColor: UIColor = baseBackColor, baseColor: UIColor = baseColor) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15, execute: {
             if spinner == nil, let window = UIApplication.shared.keyWindow {
                 let frame = UIScreen.main.bounds
@@ -28,7 +28,7 @@ class Spinner {
         })
     }
 
-    static func stop() {
+    class func stop() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15, execute: {
             if spinner != nil {
                 spinner!.stopAnimating()

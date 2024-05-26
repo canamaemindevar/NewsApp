@@ -19,6 +19,7 @@ final class DetailViewController: ViewController<DetailViewModel> {
     @IBOutlet weak var segueToWebView: UIButton!
     
     var article: Article
+    var coordinator: DetailPageCoordinator?
 
     //MARK: - Life Cycle
     
@@ -38,13 +39,12 @@ final class DetailViewController: ViewController<DetailViewModel> {
 
     @IBAction func segueToWebView(_ sender: UIButton) {
         guard let newsUrl = article.url else {return}
-        let webVc = WebViewController(newsUrl: newsUrl)
-        self.navigationController?.pushViewController(webVc, animated: true)
+        coordinator?.goToWebView(newsUrl: newsUrl)
     }
 }
 //MARK: - Private funcs
 private extension DetailViewController {
-    private func setNew() {
+    func setNew() {
         self.newsTitle.text = article.title
         self.newsImageView.setImage(article.urlToImage)
         self.newsAuthorLabel.text = article.author
@@ -65,11 +65,11 @@ private extension DetailViewController {
         
     }
     
-    @objc private func makeFav() {
+    @objc func makeFav() {
         viewModel?.makeFav(article: self.article)
     }
 
-    private func formatDate(date: String?) -> String? {
+    func formatDate(date: String?) -> String? {
         guard let dateString = date else { return nil }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

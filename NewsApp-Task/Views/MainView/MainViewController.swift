@@ -10,6 +10,7 @@ import UIKit
 final class MainViewController: ViewController<MainViewModel> {
 
     var pageChoice: DataSourceForMainView
+    var coordinator: MainPageCoordinator?
 
     var newsArray: [Article]? {
         didSet {
@@ -101,9 +102,7 @@ extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let arr = newsArray else {return}
         let article = arr[indexPath.row] 
-        let detailVc = DetailViewController(article: article)
-        detailVc.viewModel = DetailViewModel()
-        self.navigationController?.pushViewController(detailVc, animated: true)
+        coordinator?.goToDetailPage(article: article)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
