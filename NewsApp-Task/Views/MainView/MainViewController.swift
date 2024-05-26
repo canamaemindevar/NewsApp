@@ -89,7 +89,7 @@ private extension MainViewController {
             print(success)
             self.newsArray = success.articles
         case .failure(let failure):
-            print(failure)
+                ErroHandleViewBuilder.showError(from: self)
         }
     }
 }
