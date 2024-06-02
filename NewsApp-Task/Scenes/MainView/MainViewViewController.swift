@@ -118,8 +118,8 @@ extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let arr =  newsArray else {return}
         let article = arr[indexPath.row]
-        let detailVc = DetailViewController(article: article)
-        self.navigationController?.pushViewController(detailVc, animated: true)
+        router?.goToDetailView(article: article)
+
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
