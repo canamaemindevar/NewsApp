@@ -7,13 +7,15 @@
 
 import UIKit
 
-class TabbarController: UITabBarController {
+final class TabbarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let newsVC = MainViewController(pageChoice: .SearchPage)
-        let favVC = MainViewController(pageChoice: .FavoritePage)
+        let newsVC = MainViewController()
+        newsVC.router?.dataStore?.pageChoice = .SearchPage
+        let favVC = MainViewController()
+        favVC.router?.dataStore?.pageChoice = .FavoritePage
         let newsNc = UINavigationController(rootViewController: newsVC)
         let favNC = UINavigationController(rootViewController: favVC)
         
@@ -21,7 +23,7 @@ class TabbarController: UITabBarController {
         newsNc.title = "News"
         favNC.tabBarItem.image = UIImage(systemName: "heart.fill")
         favNC.title = "Favorites"
-        
+
         setViewControllers([newsNc,favNC], animated: true)
     }
 }

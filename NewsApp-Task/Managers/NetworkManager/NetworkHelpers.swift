@@ -76,7 +76,7 @@ extension Endpoint: EndpointProtocol {
         
         if case .query(let query) = self {
             components.queryItems = [URLQueryItem(name: "q", value: query),
-                                     URLQueryItem(name: "from", value: "2023-07-06"),
+                                     URLQueryItem(name: "from", value: "2024-05-30"),
                                      URLQueryItem(name: "sortBy", value: "publishedAt"),
                                      URLQueryItem(name: "apiKey", value: apiKey)
             ]

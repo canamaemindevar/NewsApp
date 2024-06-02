@@ -7,17 +7,17 @@
 
 import Foundation
 
-enum DataSourceForMainView: String {
-    
-    case SearchPage
-    case FavoritePage
-    
-    func setTitle() -> String {
-        switch self {
-        case .SearchPage:
-            return "News"
-        case .FavoritePage:
-           return "Favorites"
-        }
-    }
-}
+//enum DataSourceForMainView: String {
+//    
+//    case SearchPage
+//    case FavoritePage
+//    
+//    func setTitle() -> String {
+//        switch self {
+//        case .SearchPage:
+//            return "News"
+//        case .FavoritePage:
+//           return "Favorites"
+//        }
+//    }
+//}

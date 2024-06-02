@@ -19,7 +19,7 @@ class NewNetworkManager: NewNetworkManagerInterface {
     func request<T: Codable>(_ endpoint: Endpoint,completion: @escaping((Result<T,NewsAppErrors>)->())) {
         
         URLSession.shared.dataTask(with: endpoint.request()) { data,response,error in
-            
+            print(endpoint.request())
             if error != nil {
                 completion(.failure(.generalError))
                 return

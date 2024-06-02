@@ -33,6 +33,13 @@
 		A99C89242A5BFBF600FBE166 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99C89222A5BFBF600FBE166 /* NewsTableViewCell.xib */; };
 		A99C89282A5C0BF300FBE166 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C89272A5C0BF300FBE166 /* UITableViewCell+Extensions.swift */; };
 		A99C892E2A5C147600FBE166 /* ArticleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A99C892C2A5C147600FBE166 /* ArticleModel.xcdatamodeld */; };
+		A9CEC6AB2C0B4AE800B14804 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CEC6A42C0B4AE800B14804 /* MainView.storyboard */; };
+		A9CEC6AC2C0B4AE800B14804 /* MainViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6A52C0B4AE800B14804 /* MainViewViewController.swift */; };
+		A9CEC6AD2C0B4AE800B14804 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6A62C0B4AE800B14804 /* MainViewPresenter.swift */; };
+		A9CEC6AE2C0B4AE800B14804 /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6A72C0B4AE800B14804 /* MainViewInteractor.swift */; };
+		A9CEC6AF2C0B4AE800B14804 /* MainViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6A82C0B4AE800B14804 /* MainViewModels.swift */; };
+		A9CEC6B02C0B4AE800B14804 /* MainViewWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6A92C0B4AE800B14804 /* MainViewWorker.swift */; };
+		A9CEC6B12C0B4AE800B14804 /* MainViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6AA2C0B4AE800B14804 /* MainViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +70,13 @@
 		A99C89222A5BFBF600FBE166 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		A99C89272A5C0BF300FBE166 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		A99C892D2A5C147600FBE166 /* ArticleModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArticleModel.xcdatamodel; sourceTree = "<group>"; };
+		A9CEC6A42C0B4AE800B14804 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		A9CEC6A52C0B4AE800B14804 /* MainViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewController.swift; sourceTree = "<group>"; };
+		A9CEC6A62C0B4AE800B14804 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		A9CEC6A72C0B4AE800B14804 /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		A9CEC6A82C0B4AE800B14804 /* MainViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModels.swift; sourceTree = "<group>"; };
+		A9CEC6A92C0B4AE800B14804 /* MainViewWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewWorker.swift; sourceTree = "<group>"; };
+		A9CEC6AA2C0B4AE800B14804 /* MainViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +220,13 @@
 			isa = PBXGroup;
 			children = (
 				A912CB912A575C5E0007863B /* MainViewController.swift */,
+				A9CEC6A42C0B4AE800B14804 /* MainView.storyboard */,
+				A9CEC6A52C0B4AE800B14804 /* MainViewViewController.swift */,
+				A9CEC6A62C0B4AE800B14804 /* MainViewPresenter.swift */,
+				A9CEC6A72C0B4AE800B14804 /* MainViewInteractor.swift */,
+				A9CEC6A82C0B4AE800B14804 /* MainViewModels.swift */,
+				A9CEC6A92C0B4AE800B14804 /* MainViewWorker.swift */,
+				A9CEC6AA2C0B4AE800B14804 /* MainViewRouter.swift */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -328,6 +349,7 @@
 			files = (
 				A912CB9A2A575C600007863B /* LaunchScreen.storyboard in Resources */,
 				A912CB972A575C600007863B /* Assets.xcassets in Resources */,
+				A9CEC6AB2C0B4AE800B14804 /* MainView.storyboard in Resources */,
 				A912CB952A575C5E0007863B /* Main.storyboard in Resources */,
 				A912CBC32A57FD170007863B /* WebViewController.xib in Resources */,
 				A99C89242A5BFBF600FBE166 /* NewsTableViewCell.xib in Resources */,
@@ -342,17 +364,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CEC6AC2C0B4AE800B14804 /* MainViewViewController.swift in Sources */,
 				A912CBC52A580FE80007863B /* NetworkManager.swift in Sources */,
 				A99C891D2A5BEDEA00FBE166 /* LocalDBManager.swift in Sources */,
 				A912CB922A575C5E0007863B /* MainViewController.swift in Sources */,
 				A99C892E2A5C147600FBE166 /* ArticleModel.xcdatamodeld in Sources */,
 				A99C891F2A5BFAF700FBE166 /* UITableView+Extensions.swift in Sources */,
+				A9CEC6AD2C0B4AE800B14804 /* MainViewPresenter.swift in Sources */,
 				A912CBA92A575E7F0007863B /* BaseViewController.swift in Sources */,
+				A9CEC6B12C0B4AE800B14804 /* MainViewRouter.swift in Sources */,
 				A912CBC92A5810850007863B /* NewsAppErrors.swift in Sources */,
 				A912CB8E2A575C5E0007863B /* AppDelegate.swift in Sources */,
 				A912CBD02A5821470007863B /* UIView+Extensions.swift in Sources */,
+				A9CEC6B02C0B4AE800B14804 /* MainViewWorker.swift in Sources */,
 				A99C89282A5C0BF300FBE166 /* UITableViewCell+Extensions.swift in Sources */,
 				A912CBB62A5768CB0007863B /* DetailViewController.swift in Sources */,
+				A9CEC6AF2C0B4AE800B14804 /* MainViewModels.swift in Sources */,
 				A912CBD32A5831770007863B /* NewsResponse.swift in Sources */,
 				A912CBCE2A58200D0007863B /* UIImageView+Extensions.swift in Sources */,
 				A912CBAB2A5760030007863B /* TabbarController.swift in Sources */,
@@ -360,6 +387,7 @@
 				A912CB902A575C5E0007863B /* SceneDelegate.swift in Sources */,
 				A99C89232A5BFBF600FBE166 /* NewsTableViewCell.swift in Sources */,
 				A912CBC72A5810230007863B /* NetworkHelpers.swift in Sources */,
+				A9CEC6AE2C0B4AE800B14804 /* MainViewInteractor.swift in Sources */,
 				A912CBC22A57FD170007863B /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
