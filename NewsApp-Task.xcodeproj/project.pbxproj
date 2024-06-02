@@ -29,7 +29,6 @@
 		A99C89242A5BFBF600FBE166 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A99C89222A5BFBF600FBE166 /* NewsTableViewCell.xib */; };
 		A99C89282A5C0BF300FBE166 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C89272A5C0BF300FBE166 /* UITableViewCell+Extensions.swift */; };
 		A99C892E2A5C147600FBE166 /* ArticleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A99C892C2A5C147600FBE166 /* ArticleModel.xcdatamodeld */; };
-		A9CEC6AB2C0B4AE800B14804 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CEC6A42C0B4AE800B14804 /* MainView.storyboard */; };
 		A9CEC6AC2C0B4AE800B14804 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6A52C0B4AE800B14804 /* MainViewController.swift */; };
 		A9CEC6AD2C0B4AE800B14804 /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6A62C0B4AE800B14804 /* MainViewPresenter.swift */; };
 		A9CEC6AE2C0B4AE800B14804 /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CEC6A72C0B4AE800B14804 /* MainViewInteractor.swift */; };
@@ -64,7 +63,6 @@
 		A99C89222A5BFBF600FBE166 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		A99C89272A5C0BF300FBE166 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		A99C892D2A5C147600FBE166 /* ArticleModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArticleModel.xcdatamodel; sourceTree = "<group>"; };
-		A9CEC6A42C0B4AE800B14804 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
 		A9CEC6A52C0B4AE800B14804 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A9CEC6A62C0B4AE800B14804 /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 		A9CEC6A72C0B4AE800B14804 /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 		A912CBAF2A5768610007863B /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				A9CEC6A42C0B4AE800B14804 /* MainView.storyboard */,
 				A9CEC6A52C0B4AE800B14804 /* MainViewController.swift */,
 				A9CEC6A62C0B4AE800B14804 /* MainViewPresenter.swift */,
 				A9CEC6A72C0B4AE800B14804 /* MainViewInteractor.swift */,
@@ -343,7 +340,6 @@
 			files = (
 				A912CB9A2A575C600007863B /* LaunchScreen.storyboard in Resources */,
 				A912CB972A575C600007863B /* Assets.xcassets in Resources */,
-				A9CEC6AB2C0B4AE800B14804 /* MainView.storyboard in Resources */,
 				A912CB952A575C5E0007863B /* Main.storyboard in Resources */,
 				A912CBC32A57FD170007863B /* WebViewController.xib in Resources */,
 				A99C89242A5BFBF600FBE166 /* NewsTableViewCell.xib in Resources */,
