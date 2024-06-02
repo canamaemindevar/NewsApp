@@ -30,6 +30,7 @@ final class MainViewInteractor: MainViewBusinessLogic, MainViewDataStore {
     var newsArray: NewsResponse?
 
     func getHeadLines() {
+        Spinner.start()
         worker.getHeadLines { response in
             switch response {
                 case .success(let success):
@@ -39,10 +40,12 @@ final class MainViewInteractor: MainViewBusinessLogic, MainViewDataStore {
                     self.presenter?.handleError()
                     print(failure)
             }
+            Spinner.stop()
         }
     }
 
     func makeQuery(word: String) {
+        Spinner.start()
         worker.makeQuery(word: word) { response in
             switch response {
                 case .success(let success):
@@ -52,6 +55,7 @@ final class MainViewInteractor: MainViewBusinessLogic, MainViewDataStore {
                     self.presenter?.handleError()
                     print(failure)
             }
+            Spinner.stop()
         }
     }
 

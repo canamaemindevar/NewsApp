@@ -63,7 +63,7 @@ final class MainViewController: BaseViewController {
 
 private extension MainViewController {
     // MARK: Setup
-    private func setup() {
+    func setup() {
         let viewController = self
         let interactor = MainViewInteractor()
         let presenter = MainViewPresenter()
@@ -76,7 +76,7 @@ private extension MainViewController {
         router.dataStore = interactor
     }
 
-    private func startQuery(){
+    func startQuery(){
         interactor?.getHeadLines()
     }
 
@@ -110,7 +110,7 @@ extension MainViewController: MainViewDisplayLogic {
     
     
     func handleError() {
-
+        router?.showErrorView()
     }
 }
 extension MainViewController: UITableViewDelegate {

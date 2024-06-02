@@ -9,6 +9,7 @@ import Foundation
 
 protocol MainViewRoutingLogic: AnyObject {
     func goToDetailView(article: Article)
+    func showErrorView() 
 }
 
 protocol MainViewDataPassing: class {
@@ -24,5 +25,9 @@ final class MainViewRouter: MainViewRoutingLogic, MainViewDataPassing {
     func goToDetailView(article: Article) {
         let detailVc = DetailViewController(article: article)
         self.viewController?.navigationController?.pushViewController(detailVc, animated: true)
+    }
+
+    func showErrorView() {
+        ErroHandleViewBuilder.showError(from: self.viewController)
     }
 }
