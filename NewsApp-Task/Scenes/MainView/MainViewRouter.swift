@@ -21,9 +21,9 @@ final class MainViewRouter: MainViewRoutingLogic, MainViewDataPassing {
     weak var viewController: MainViewController?
     var dataStore: MainViewDataStore?
     
-
     func goToDetailView(article: Article) {
-        let detailVc = DetailViewController(article: article)
+        let detailVc = DetailViewController()
+        detailVc.router?.dataStore?.article = article
         self.viewController?.navigationController?.pushViewController(detailVc, animated: true)
     }
 

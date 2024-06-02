@@ -17,7 +17,6 @@ final class MainViewController: BaseViewController {
     var interactor: MainViewBusinessLogic?
     var router: (MainViewRoutingLogic & MainViewDataPassing)?
 
- //   var pageChoice: DataSourceForMainView = .SearchPage
     var newsArray: [Article]?
     // MARK: Components
     private let tableView: UITableView = {
@@ -107,8 +106,7 @@ extension MainViewController: MainViewDisplayLogic {
             self.tableView.reloadData()
         }
     }
-    
-    
+
     func handleError() {
         router?.showErrorView()
     }
@@ -121,6 +119,7 @@ extension MainViewController: UITableViewDelegate {
         router?.goToDetailView(article: article)
 
     }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -128,6 +127,7 @@ extension MainViewController: UITableViewDelegate {
 
 
 extension MainViewController: UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return newsArray?.count ?? 5
     }
@@ -145,8 +145,8 @@ extension MainViewController: UITableViewDataSource {
 //MARK: - SearchBar Delegate
 
 extension MainViewController: UISearchBarDelegate {
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-
         guard let text = searchBar.text, !text.isEmpty else {return }
         interactor?.makeQuery(word: text)
     }

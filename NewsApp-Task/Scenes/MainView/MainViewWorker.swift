@@ -11,8 +11,6 @@ protocol MainViewWorkingLogic: AnyObject {
     func getHeadLines(completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void)
     func makeQuery(word: String,completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void)
     func fetchFromDb(completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void)
-    func saveToDB(model: Article)
-    func deleteFromDB(model: Article)
 }
 
 final class MainViewWorker: MainViewWorkingLogic {
@@ -32,14 +30,5 @@ final class MainViewWorker: MainViewWorkingLogic {
 
     func fetchFromDb(completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void) {
         localDBManager.fetchModel(completion: completion)
-    }
-
-    // kaldir detaile koy
-    func saveToDB(model: Article) {
-        localDBManager.saveModel(with: model)
-    }
-
-    func deleteFromDB(model: Article) {
-        localDBManager.deleteModel(with: model)
     }
 }

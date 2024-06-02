@@ -11,8 +11,6 @@ protocol MainViewBusinessLogic: AnyObject {
     func getHeadLines()
     func makeQuery(word: String)
     func fetchFromDb()
-    func saveToDB(model: Article)
-    func deleteFromDB(model: Article)
 }
 
 protocol MainViewDataStore: AnyObject {
@@ -31,13 +29,13 @@ final class MainViewInteractor: MainViewBusinessLogic, MainViewDataStore {
 
     func getHeadLines() {
         Spinner.start()
-        worker.getHeadLines { response in
+        worker.getHeadLines { [weak self] response  in
             switch response {
                 case .success(let success):
-                    self.newsArray = success
-                    self.presenter?.handleResponse(news: self.newsArray)
+                    self?.newsArray = success
+                    self?.presenter?.handleResponse(news: self?.newsArray)
                 case .failure(let failure):
-                    self.presenter?.handleError()
+                    self?.presenter?.handleError()
                     print(failure)
             }
             Spinner.stop()
@@ -46,13 +44,13 @@ final class MainViewInteractor: MainViewBusinessLogic, MainViewDataStore {
 
     func makeQuery(word: String) {
         Spinner.start()
-        worker.makeQuery(word: word) { response in
+        worker.makeQuery(word: word) { [weak self] response in
             switch response {
                 case .success(let success):
-                    self.newsArray = success
-                    self.presenter?.handleResponse(news: self.newsArray)
+                    self?.newsArray = success
+                    self?.presenter?.handleResponse(news: self?.newsArray)
                 case .failure(let failure):
-                    self.presenter?.handleError()
+                    self?.presenter?.handleError()
                     print(failure)
             }
             Spinner.stop()
@@ -60,24 +58,15 @@ final class MainViewInteractor: MainViewBusinessLogic, MainViewDataStore {
     }
 
     func fetchFromDb() {
-        worker.fetchFromDb { response in
+        worker.fetchFromDb { [weak self] response in
             switch response {
                 case .success(let success):
-                    self.newsArray = success
-                    self.presenter?.handleResponse(news: self.newsArray)
+                    self?.newsArray = success
+                    self?.presenter?.handleResponse(news: self?.newsArray)
                 case .failure(let failure):
-                    self.presenter?.handleError()
+                    self?.presenter?.handleError()
                     print(failure)
             }
         }
     }
-
-    func saveToDB(model: Article) {
-        worker.saveToDB(model: model)
-    }
-
-    func deleteFromDB(model: Article) {
-        worker.deleteFromDB(model: model)
-    }
-
 }
