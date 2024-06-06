@@ -8,7 +8,8 @@
 import Foundation
 
 
-final class MainRouter: MainPresenterToMainRouterInterface {
+final class MainRouter: MainPresenterToRouterInterface {
+    
     static func executeModule(view: MainViewController) {
         let presenter = MainPresenter()
         view.presenter = presenter
@@ -17,5 +18,7 @@ final class MainRouter: MainPresenterToMainRouterInterface {
         view.presenter?.mainInteractor?.presenter = presenter
     }
     
-
+    func routeToDetailView(new: Article) {
+        
+    }
 }

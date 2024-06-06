@@ -30,7 +30,11 @@
 		A97121A02C12041700EF70F1 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A971219F2C12041700EF70F1 /* MainInteractor.swift */; };
 		A97121A22C12042800EF70F1 /* MainEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121A12C12042800EF70F1 /* MainEntity.swift */; };
 		A97121A42C12047800EF70F1 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121A32C12047800EF70F1 /* MainRouter.swift */; };
-		A97121A62C1208D900EF70F1 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121A52C1208D900EF70F1 /* Protocols.swift */; };
+		A97121A62C1208D900EF70F1 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121A52C1208D900EF70F1 /* MainProtocols.swift */; };
+		A97121AA2C124B6500EF70F1 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121A92C124B6400EF70F1 /* DetailPresenter.swift */; };
+		A97121AC2C124B7900EF70F1 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121AB2C124B7900EF70F1 /* DetailInteractor.swift */; };
+		A97121AE2C124B9300EF70F1 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121AD2C124B9300EF70F1 /* DetailRouter.swift */; };
+		A97121B02C124C4200EF70F1 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121AF2C124C4200EF70F1 /* DetailProtocols.swift */; };
 		A99C891D2A5BEDEA00FBE166 /* LocalDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C891C2A5BEDEA00FBE166 /* LocalDBManager.swift */; };
 		A99C891F2A5BFAF700FBE166 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C891E2A5BFAF700FBE166 /* UITableView+Extensions.swift */; };
 		A99C89232A5BFBF600FBE166 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C89212A5BFBF600FBE166 /* NewsTableViewCell.swift */; };
@@ -64,7 +68,11 @@
 		A971219F2C12041700EF70F1 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		A97121A12C12042800EF70F1 /* MainEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntity.swift; sourceTree = "<group>"; };
 		A97121A32C12047800EF70F1 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		A97121A52C1208D900EF70F1 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		A97121A52C1208D900EF70F1 /* MainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		A97121A92C124B6400EF70F1 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		A97121AB2C124B7900EF70F1 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		A97121AD2C124B9300EF70F1 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		A97121AF2C124C4200EF70F1 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
 		A99C891C2A5BEDEA00FBE166 /* LocalDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDBManager.swift; sourceTree = "<group>"; };
 		A99C891E2A5BFAF700FBE166 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		A99C89212A5BFBF600FBE166 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -166,9 +174,9 @@
 		A912CBA62A575D080007863B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A912CB9B2A575C600007863B /* Info.plist */,
 				A912CBA22A575CA10007863B /* Storyboards */,
 				A912CBA72A575D170007863B /* Assets */,
-				A912CB9B2A575C600007863B /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -213,7 +221,7 @@
 				A971219D2C12040400EF70F1 /* MainPresenter.swift */,
 				A971219F2C12041700EF70F1 /* MainInteractor.swift */,
 				A97121A32C12047800EF70F1 /* MainRouter.swift */,
-				A97121A52C1208D900EF70F1 /* Protocols.swift */,
+				A97121A52C1208D900EF70F1 /* MainProtocols.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -231,6 +239,10 @@
 			children = (
 				A912CBB42A5768CB0007863B /* DetailViewController.swift */,
 				A912CBB52A5768CB0007863B /* DetailViewController.xib */,
+				A97121A92C124B6400EF70F1 /* DetailPresenter.swift */,
+				A97121AB2C124B7900EF70F1 /* DetailInteractor.swift */,
+				A97121AD2C124B9300EF70F1 /* DetailRouter.swift */,
+				A97121AF2C124C4200EF70F1 /* DetailProtocols.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -371,7 +383,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A912CBC52A580FE80007863B /* NetworkManager.swift in Sources */,
-				A97121A62C1208D900EF70F1 /* Protocols.swift in Sources */,
+				A97121AC2C124B7900EF70F1 /* DetailInteractor.swift in Sources */,
+				A97121A62C1208D900EF70F1 /* MainProtocols.swift in Sources */,
+				A97121AE2C124B9300EF70F1 /* DetailRouter.swift in Sources */,
 				A99C891D2A5BEDEA00FBE166 /* LocalDBManager.swift in Sources */,
 				A912CB922A575C5E0007863B /* MainViewController.swift in Sources */,
 				A99C892E2A5C147600FBE166 /* ArticleModel.xcdatamodeld in Sources */,
@@ -380,7 +394,9 @@
 				A912CBA92A575E7F0007863B /* BaseViewController.swift in Sources */,
 				A912CBC92A5810850007863B /* NewsAppErrors.swift in Sources */,
 				A912CB8E2A575C5E0007863B /* AppDelegate.swift in Sources */,
+				A97121B02C124C4200EF70F1 /* DetailProtocols.swift in Sources */,
 				A912CBD02A5821470007863B /* UIView+Extensions.swift in Sources */,
+				A97121AA2C124B6500EF70F1 /* DetailPresenter.swift in Sources */,
 				A99C89282A5C0BF300FBE166 /* UITableViewCell+Extensions.swift in Sources */,
 				A912CBB62A5768CB0007863B /* DetailViewController.swift in Sources */,
 				A912CBCE2A58200D0007863B /* UIImageView+Extensions.swift in Sources */,
@@ -541,7 +557,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MZZ36MSKF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "NewsApp-Task/Helpers/Info.plist";
+				INFOPLIST_FILE = "NewsApp-Task/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -569,7 +585,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MZZ36MSKF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "NewsApp-Task/Helpers/Info.plist";
+				INFOPLIST_FILE = "NewsApp-Task/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -8,32 +8,31 @@
 import Foundation
 
 protocol MainViewToPresenterInterface {
-    var mainInteractor: MainPresenterToMainInteractorInterface? { get set }
-    var view: MainPresenterToMainViewControllerInterface? { get set }
+    var mainInteractor: MainPresenterToInteractorInterface? { get set }
+    var view: MainPresenterToViewControllerInterface? { get set }
     func getHeadLines()
     func makeQuery(word: String)
     func fetchFromDb()
-
 }
-protocol MainPresenterToMainViewControllerInterface {
 
+protocol MainPresenterToViewControllerInterface {
     func updateView(news: NewsResponse?)
     func handleError()
 }
 
-protocol MainPresenterToMainInteractorInterface {
-    var presenter: MainInteractorToMainViewPresenter? { get set }
-    // query
+protocol MainPresenterToInteractorInterface {
+    var presenter: MainInteractorToViewPresenter? { get set }
     func getHeadLines()
     func makeQuery(word: String)
     func fetchFromDb()
-
 }
 
-protocol MainPresenterToMainRouterInterface {
+protocol MainPresenterToRouterInterface {
     static func executeModule(view: MainViewController)
+    func routeToDetailView(new: Article)
 }
-protocol MainInteractorToMainViewPresenter {
+
+protocol MainInteractorToViewPresenter {
     func handleResponse(news: NewsResponse?)
     func handleError()
 }

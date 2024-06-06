@@ -56,7 +56,7 @@ final class MainViewController: BaseViewController {
     }
 }
 
-extension MainViewController: MainPresenterToMainViewControllerInterface {
+extension MainViewController: MainPresenterToViewControllerInterface {
     func updateView(news: NewsResponse?) {
         self.newsArray = news?.articles
         DispatchQueue.main.async {
@@ -104,6 +104,7 @@ extension MainViewController: UITableViewDelegate {
         let detailVc = DetailViewController(article: article)
         self.navigationController?.pushViewController(detailVc, animated: true)
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }

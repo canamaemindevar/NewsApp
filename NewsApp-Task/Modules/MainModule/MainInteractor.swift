@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class MainInteractor: MainPresenterToMainInteractorInterface {
+final class MainInteractor: MainPresenterToInteractorInterface {
     
-    var presenter: MainInteractorToMainViewPresenter?
+    var presenter: MainInteractorToViewPresenter?
 
     func getHeadLines() {
         NewNetworkManager.shared.getHeadLines(completion: handleNewsResponse(response:))
@@ -29,7 +29,7 @@ final class MainInteractor: MainPresenterToMainInteractorInterface {
             case .success(let success):
                 print(success)
                 self.presenter?.handleResponse(news: success)
-            case .failure(let failure):
+            case .failure(_):
                 self.presenter?.handleError()
         }
         //   Spinner.stop()

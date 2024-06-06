@@ -10,8 +10,8 @@ import Foundation
 
 final class MainPresenter: MainViewToPresenterInterface {
 
-    var mainInteractor: MainPresenterToMainInteractorInterface?
-    var view: MainPresenterToMainViewControllerInterface?
+    var mainInteractor: MainPresenterToInteractorInterface?
+    var view: MainPresenterToViewControllerInterface?
 
     func getHeadLines() {
         mainInteractor?.getHeadLines()
@@ -26,7 +26,7 @@ final class MainPresenter: MainViewToPresenterInterface {
     }
 }
 
-extension MainPresenter: MainInteractorToMainViewPresenter {
+extension MainPresenter: MainInteractorToViewPresenter {
     func handleResponse(news: NewsResponse?) {
         if let news {
             view?.updateView(news: news)
