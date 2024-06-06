@@ -7,17 +7,12 @@
 
 import UIKit
 
-final class MainViewController: BaseViewController {
-    
-    var pageChoice: DataSourceForMainView
 
-    var newsArray: [Article]? {
-        didSet {
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-    }
+final class MainViewController: BaseViewController {
+
+    var pageChoice: DataSourceForMainView
+    var presenter: MainViewToPresenterInterface?
+    var newsArray: [Article]?
 
     //MARK: - Components
     
@@ -47,17 +42,32 @@ final class MainViewController: BaseViewController {
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        MainRouter.executeModule(view: self)
         setPage()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if pageChoice == .FavoritePage {
-            LocalDBManager.shared.fetchModel(completion: handleNewsResponse(response:))
+            presenter?.mainInteractor?.fetchFromDb()
         }
     }
     override func viewWillLayoutSubviews() {
         self.tableView.frame = view.bounds
     }
+}
+
+extension MainViewController: MainPresenterToMainViewControllerInterface {
+    func updateView(news: NewsResponse?) {
+        self.newsArray = news?.articles
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+
+    func handleError() {
+      //  router?.showErrorView()
+    }
+
 }
 
 //MARK: - Private Functions
@@ -72,25 +82,15 @@ private extension MainViewController {
         
         if pageChoice == .SearchPage {
             makeSearchBar()
-            NewNetworkManager.shared.getHeadLines(completion: handleNewsResponse(response:))
+            presenter?.mainInteractor?.getHeadLines()
         } else {
-            LocalDBManager.shared.fetchModel(completion: handleNewsResponse(response:))
+            presenter?.mainInteractor?.fetchFromDb()
         }
     }
     
     func makeSearchBar() {
         navigationItem.searchController = searchVc
         searchVc.searchBar.delegate = self
-    }
-    
-    func handleNewsResponse(response: Result<NewsResponse, NewsAppErrors>) {
-        switch response {
-        case .success(let success):
-            print(success)
-            self.newsArray = success.articles
-        case .failure(let failure):
-            print(failure)
-        }
     }
 }
 
@@ -131,6 +131,6 @@ extension MainViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         guard let text = searchBar.text, !text.isEmpty else {return }
-        NewNetworkManager.shared.makeQuery(word: text, completion: handleNewsResponse(response:))
+        presenter?.mainInteractor?.makeQuery(word: text)
     }
 }

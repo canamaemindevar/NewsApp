@@ -1,8 +1,8 @@
 //
-//  NewsResponse.swift
+//  MainEntity.swift
 //  NewsApp-Task
 //
-//  Created by Emincan Antalyalı on 7.07.2023.
+//  Created by Emincan Antalyalı on 6.06.2024.
 //
 
 import Foundation
