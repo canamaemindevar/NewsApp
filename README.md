@@ -19,7 +19,7 @@ MVVM-C enhances the traditional MVVM pattern by introducing Coordinators to hand
 ### [VIP (View-Interactor-Presenter)](https://github.com/canamaemindevar/NewsApp/tree/VIP)
 The VIP pattern breaks down the components into more granular roles, making the code more modular and testable. It emphasizes unidirectional flow and clear separation between the UI and business logic.
 
-### [VIPER (View-Interactor-Presenter-Entity-Router)](https://github.com/canamaemindevar/NewsApp/tree/viper)
+### [VIPER (View-Interactor-Presenter-Entity-Router)](https://github.com/canamaemindevar/NewsApp/tree/VIPER)
 VIPER takes modularity and separation of concerns to the next level. By adding Entities and Routers, this architecture ensures each component has a single responsibility, making the application highly testable and maintainable.
 
 ## Installation
