@@ -28,6 +28,7 @@ protocol DetailPresenterToInteractorInterface {
 
 protocol DetailPresenterToRouterInterface {
    func segueToWebView(newsUrl: String, view: DetailViewController)
+    func showError(from: DetailViewController) 
 }
 
 protocol DetailInteractorToViewPresenter {

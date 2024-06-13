@@ -65,7 +65,7 @@ extension MainViewController: MainPresenterToViewControllerInterface {
     }
 
     func handleError() {
-      //  router?.showErrorView()
+        presenter?.router?.showError(from: self)
     }
 
 }

@@ -59,7 +59,7 @@ extension DetailViewController: DetailPresenterToViewControllerInterface {
     }
 
     func errorHandle() {
-        //router?.showErrorView()
+        presenter?.router?.showError(from: self)
     }
 }
 //MARK: - Private funcs

@@ -35,6 +35,8 @@
 		A97121AC2C124B7900EF70F1 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121AB2C124B7900EF70F1 /* DetailInteractor.swift */; };
 		A97121AE2C124B9300EF70F1 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121AD2C124B9300EF70F1 /* DetailRouter.swift */; };
 		A97121B02C124C4200EF70F1 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97121AF2C124C4200EF70F1 /* DetailProtocols.swift */; };
+		A98C6A072C1B255300DD58BB /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C6A062C1B255300DD58BB /* Spinner.swift */; };
+		A98C6A0A2C1B26DB00DD58BB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C6A092C1B26DB00DD58BB /* ErrorView.swift */; };
 		A99C891D2A5BEDEA00FBE166 /* LocalDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C891C2A5BEDEA00FBE166 /* LocalDBManager.swift */; };
 		A99C891F2A5BFAF700FBE166 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C891E2A5BFAF700FBE166 /* UITableView+Extensions.swift */; };
 		A99C89232A5BFBF600FBE166 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C89212A5BFBF600FBE166 /* NewsTableViewCell.swift */; };
@@ -73,6 +75,8 @@
 		A97121AB2C124B7900EF70F1 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		A97121AD2C124B9300EF70F1 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		A97121AF2C124C4200EF70F1 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
+		A98C6A062C1B255300DD58BB /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		A98C6A092C1B26DB00DD58BB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		A99C891C2A5BEDEA00FBE166 /* LocalDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDBManager.swift; sourceTree = "<group>"; };
 		A99C891E2A5BFAF700FBE166 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		A99C89212A5BFBF600FBE166 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,6 +148,8 @@
 		A912CBA32A575CC70007863B /* HelperViews */ = {
 			isa = PBXGroup;
 			children = (
+				A98C6A082C1B26CF00DD58BB /* ErrorView */,
+				A98C6A052C1B254000DD58BB /* Spinner */,
 				A99C89202A5BFBD800FBE166 /* Cell */,
 				A912CBAE2A5768590007863B /* Base */,
 				A912CBB02A57686E0007863B /* Tabbar */,
@@ -293,6 +299,22 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		A98C6A052C1B254000DD58BB /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				A98C6A062C1B255300DD58BB /* Spinner.swift */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
+		A98C6A082C1B26CF00DD58BB /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				A98C6A092C1B26DB00DD58BB /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
 		A99C89202A5BFBD800FBE166 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,7 +407,9 @@
 				A912CBC52A580FE80007863B /* NetworkManager.swift in Sources */,
 				A97121AC2C124B7900EF70F1 /* DetailInteractor.swift in Sources */,
 				A97121A62C1208D900EF70F1 /* MainProtocols.swift in Sources */,
+				A98C6A072C1B255300DD58BB /* Spinner.swift in Sources */,
 				A97121AE2C124B9300EF70F1 /* DetailRouter.swift in Sources */,
+				A98C6A0A2C1B26DB00DD58BB /* ErrorView.swift in Sources */,
 				A99C891D2A5BEDEA00FBE166 /* LocalDBManager.swift in Sources */,
 				A912CB922A575C5E0007863B /* MainViewController.swift in Sources */,
 				A99C892E2A5C147600FBE166 /* ArticleModel.xcdatamodeld in Sources */,

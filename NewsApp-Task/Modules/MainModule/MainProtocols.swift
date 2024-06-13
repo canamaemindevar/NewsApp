@@ -31,6 +31,7 @@ protocol MainPresenterToInteractorInterface {
 protocol MainPresenterToRouterInterface {
     static func executeModule(view: MainViewController)
     func routeToDetailView(new: Article, from: MainViewController)
+    func showError(from: MainViewController) 
 }
 
 protocol MainInteractorToViewPresenter {

@@ -8,6 +8,10 @@
 import Foundation
 
 final class DetailRouter: DetailPresenterToRouterInterface {
+    
+    func showError(from: DetailViewController) {
+        ErroHandleViewBuilder.showError(from: from)
+    }
 
     func segueToWebView(newsUrl: String, view: DetailViewController) {
         let webVc = WebViewController(newsUrl: newsUrl)

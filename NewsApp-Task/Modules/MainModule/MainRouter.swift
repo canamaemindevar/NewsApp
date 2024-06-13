@@ -29,4 +29,9 @@ final class MainRouter: MainPresenterToRouterInterface {
         vc.presenter?.interactor?.presenter = presenter
         view.navigationController?.pushViewController(vc, animated: true)
     }
+
+    func showError(from: MainViewController) {
+        ErroHandleViewBuilder.showError(from: from)
+    }
+
 }

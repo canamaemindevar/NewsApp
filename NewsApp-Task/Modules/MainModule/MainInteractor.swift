@@ -12,19 +12,22 @@ final class MainInteractor: MainPresenterToInteractorInterface {
     var presenter: MainInteractorToViewPresenter?
 
     func getHeadLines() {
+        Spinner.start()
         NewNetworkManager.shared.getHeadLines(completion: handleNewsResponse(response:))
     }
 
     func makeQuery(word: String) {
+        Spinner.start()
         NewNetworkManager.shared.makeQuery(word: word, completion: handleNewsResponse(response:))
     }
 
     func fetchFromDb() {
+        Spinner.start()
         LocalDBManager.shared.fetchModel(completion: handleNewsResponse(response:))
     }
 
     func handleNewsResponse(response: Result<NewsResponse, NewsAppErrors>) {
-        //  Spinner.start()
+
         switch response {
             case .success(let success):
                 print(success)
@@ -32,6 +35,6 @@ final class MainInteractor: MainPresenterToInteractorInterface {
             case .failure(_):
                 self.presenter?.handleError()
         }
-        //   Spinner.stop()
+           Spinner.stop()
     }
 }

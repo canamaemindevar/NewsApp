@@ -53,14 +53,12 @@ class NewNetworkManager: NewNetworkManagerInterface {
             print(error)
             compeltion(.failure(.parsingError))
         }
-        
     }
 }
 
 //MARK: - Requsts
 
 extension NewNetworkManager {
-
     
     func getHeadLines(completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void) {
         let endPoint = Endpoint.topHeadlines
