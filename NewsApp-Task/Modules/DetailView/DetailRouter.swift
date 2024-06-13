@@ -7,12 +7,11 @@
 
 import Foundation
 
-final class DetailRouter {
-    static func executeModule(view: DetailViewController) {
-        let presenter = DetailPresenter()
-        view.presenter = presenter
-        view.presenter?.interactor = DetailInteractor()
-        view.presenter?.view = view
-        view.presenter?.interactor?.presenter = presenter
+final class DetailRouter: DetailPresenterToRouterInterface {
+
+    func segueToWebView(newsUrl: String, view: DetailViewController) {
+        let webVc = WebViewController(newsUrl: newsUrl)
+        view.navigationController?.pushViewController(webVc, animated: true)
     }
+
 }

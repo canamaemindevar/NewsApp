@@ -8,7 +8,7 @@
 import Foundation
 
 final class DetailPresenter: DetailViewToPresenterInterface {
-
+    var router: DetailPresenterToRouterInterface?
     var interactor: DetailPresenterToInteractorInterface?
     var view: DetailPresenterToViewControllerInterface?
 
@@ -20,6 +20,9 @@ final class DetailPresenter: DetailViewToPresenterInterface {
         interactor?.checkIsNewFav(article: article)
     }
 
+    func routeToWebView(newsUrl: String, view: DetailViewController) {
+        router?.segueToWebView(newsUrl: newsUrl, view: view)
+    }
 }
 
 extension DetailPresenter: DetailInteractorToViewPresenter {

@@ -10,19 +10,23 @@ import Foundation
 
 final class MainPresenter: MainViewToPresenterInterface {
 
-    var mainInteractor: MainPresenterToInteractorInterface?
+    var interactor: MainPresenterToInteractorInterface?
     var view: MainPresenterToViewControllerInterface?
+    var router: MainPresenterToRouterInterface?
 
     func getHeadLines() {
-        mainInteractor?.getHeadLines()
+        interactor?.getHeadLines()
     }
 
     func makeQuery(word: String) {
-        mainInteractor?.getHeadLines()
+        interactor?.getHeadLines()
     }
 
     func fetchFromDb() {
-        mainInteractor?.fetchFromDb()
+        interactor?.fetchFromDb()
+    }
+    func goToDetail(new: Article, view: MainViewController) {
+        router?.routeToDetailView(new: new, from: view)
     }
 }
 

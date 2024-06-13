@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DetailViewController: UIViewController {
+final class DetailViewController: BaseViewController {
     
     //MARK: - Components
     
@@ -33,14 +33,12 @@ final class DetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        DetailRouter.executeModule(view: self)
         presenter?.interactor?.setPage(new: article)
     }
 
     @IBAction func segueToWebView(_ sender: UIButton) {
         guard let newsUrl = article?.url else {return}
-        let webVc = WebViewController(newsUrl: newsUrl)
-        self.navigationController?.pushViewController(webVc, animated: true)
+        presenter?.routeToWebView(newsUrl: newsUrl, view: self)
     }
 }
 

@@ -10,7 +10,9 @@ import Foundation
 protocol DetailViewToPresenterInterface {
     var interactor: DetailPresenterToInteractorInterface? { get set }
     var view: DetailPresenterToViewControllerInterface? { get set }
+    var router: DetailPresenterToRouterInterface? { get set }
     func checkIsNewFav(article: Article?)
+    func routeToWebView(newsUrl: String, view: DetailViewController)
 }
 
 protocol DetailPresenterToViewControllerInterface {
@@ -25,7 +27,7 @@ protocol DetailPresenterToInteractorInterface {
 }
 
 protocol DetailPresenterToRouterInterface {
-    static func executeModule(view: DetailViewController)
+   func segueToWebView(newsUrl: String, view: DetailViewController)
 }
 
 protocol DetailInteractorToViewPresenter {

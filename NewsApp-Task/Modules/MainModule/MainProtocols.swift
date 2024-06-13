@@ -8,8 +8,9 @@
 import Foundation
 
 protocol MainViewToPresenterInterface {
-    var mainInteractor: MainPresenterToInteractorInterface? { get set }
+    var interactor: MainPresenterToInteractorInterface? { get set }
     var view: MainPresenterToViewControllerInterface? { get set }
+    var router: MainPresenterToRouterInterface? { get set }
     func getHeadLines()
     func makeQuery(word: String)
     func fetchFromDb()
@@ -29,7 +30,7 @@ protocol MainPresenterToInteractorInterface {
 
 protocol MainPresenterToRouterInterface {
     static func executeModule(view: MainViewController)
-    func routeToDetailView(new: Article)
+    func routeToDetailView(new: Article, from: MainViewController)
 }
 
 protocol MainInteractorToViewPresenter {

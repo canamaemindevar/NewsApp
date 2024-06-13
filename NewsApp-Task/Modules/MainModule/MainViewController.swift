@@ -48,7 +48,7 @@ final class MainViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if pageChoice == .FavoritePage {
-            presenter?.mainInteractor?.fetchFromDb()
+            presenter?.interactor?.fetchFromDb()
         }
     }
     override func viewWillLayoutSubviews() {
@@ -82,9 +82,9 @@ private extension MainViewController {
         
         if pageChoice == .SearchPage {
             makeSearchBar()
-            presenter?.mainInteractor?.getHeadLines()
+            presenter?.interactor?.getHeadLines()
         } else {
-            presenter?.mainInteractor?.fetchFromDb()
+            presenter?.interactor?.fetchFromDb()
         }
     }
     
@@ -101,8 +101,7 @@ extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let arr = newsArray else {return}
         let article = arr[indexPath.row] 
-        let detailVc = DetailViewController(article: article)
-        self.navigationController?.pushViewController(detailVc, animated: true)
+        presenter?.router?.routeToDetailView(new: article, from: self)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -132,6 +131,6 @@ extension MainViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         guard let text = searchBar.text, !text.isEmpty else {return }
-        presenter?.mainInteractor?.makeQuery(word: text)
+        presenter?.interactor?.makeQuery(word: text)
     }
 }
