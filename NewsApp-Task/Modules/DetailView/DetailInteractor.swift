@@ -10,6 +10,11 @@ import Foundation
 final class DetailInteractor: DetailPresenterToInteractorInterface {
 
     var presenter: DetailInteractorToViewPresenter?
+    var localDBManager: LocalDBManagerInterface?
+
+    init( localDBManager: LocalDBManagerInterface? = LocalDBManager()) {
+        self.localDBManager = localDBManager
+    }
 
     func setPage(new: Article?) {
         presenter?.handleResponse(new: new)
@@ -17,7 +22,7 @@ final class DetailInteractor: DetailPresenterToInteractorInterface {
 
     func checkIsNewFav(article: Article?) {
         guard let article else { return }
-        LocalDBManager.shared.fetchModel (completion: { [weak self] response in
+        localDBManager?.fetchModel (completion: { [weak self] response in
             switch response {
                 case .success(let success):
 
@@ -41,11 +46,11 @@ final class DetailInteractor: DetailPresenterToInteractorInterface {
 private extension DetailInteractor {
 
     func saveToDB(model: Article) {
-        LocalDBManager.shared.saveModel(with: model)
+        localDBManager?.saveModel(with: model)
     }
 
     func deleteFromDB(model: Article) {
-        LocalDBManager.shared.deleteModel(with: model)
+        localDBManager?.deleteModel(with: model)
     }
 
     func containsArticle(_ array: [Article], _ search: Article) -> Bool {

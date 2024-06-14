@@ -11,19 +11,27 @@ final class MainInteractor: MainPresenterToInteractorInterface {
     
     var presenter: MainInteractorToViewPresenter?
 
+    var networkManager: NewsRepositoryInterface?
+    var localDBManager: LocalDBManagerInterface?
+
+    init(networkManager: NewsRepositoryInterface? = nil, localDBManager: LocalDBManagerInterface? = LocalDBManager()) {
+        self.networkManager = networkManager ?? NewsRepository()
+        self.localDBManager = localDBManager
+    }
+
     func getHeadLines() {
         Spinner.start()
-        NewNetworkManager.shared.getHeadLines(completion: handleNewsResponse(response:))
+        networkManager?.getHeadLines(completion: handleNewsResponse(response:))
     }
 
     func makeQuery(word: String) {
         Spinner.start()
-        NewNetworkManager.shared.makeQuery(word: word, completion: handleNewsResponse(response:))
+        networkManager?.makeQuery(word: word, completion: handleNewsResponse(response:))
     }
 
     func fetchFromDb() {
         Spinner.start()
-        LocalDBManager.shared.fetchModel(completion: handleNewsResponse(response:))
+        localDBManager?.fetchModel(completion: handleNewsResponse(response:))
     }
 
     func handleNewsResponse(response: Result<NewsResponse, NewsAppErrors>) {

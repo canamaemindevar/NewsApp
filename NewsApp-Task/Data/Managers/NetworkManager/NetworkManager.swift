@@ -7,14 +7,11 @@
 
 import Foundation
 
-protocol NewNetworkManagerInterface {
+protocol CoreNetworkManagerInterface {
     func request<T: Codable>(_ endpoint: Endpoint,completion: @escaping((Result<T,NewsAppErrors>)->()))
 }
 
-class NewNetworkManager: NewNetworkManagerInterface {
-    
-    static let shared = NewNetworkManager()
-    private init() {}
+class CoreNetworkManager: CoreNetworkManagerInterface {
     
     func request<T: Codable>(_ endpoint: Endpoint,completion: @escaping((Result<T,NewsAppErrors>)->())) {
         
@@ -55,21 +52,3 @@ class NewNetworkManager: NewNetworkManagerInterface {
         }
     }
 }
-
-//MARK: - Requsts
-
-extension NewNetworkManager {
-    
-    func getHeadLines(completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void) {
-        let endPoint = Endpoint.topHeadlines
-        request(endPoint, completion: completion)
-    }
-    
-    func makeQuery(word: String,completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void){
-        let endpoint = Endpoint.query(query: word)
-        request(endpoint, completion: completion)
-    }
-}
-
-
- 
