@@ -3,4 +3,326 @@
    uuid = "F91BEECD-A411-4E57-A920-FA5142E23C49"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D16110A-1931-4F1C-BE3B-2389821F5DD6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewWorker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "saveToDB(model:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A95D9C9E-2E84-4C59-A7B7-96322B3515BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Managers/LocalDBManager/LocalDBManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "saveModel(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72F5AD91-E159-47CC-92D1-2FA025DF119A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewWorker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "saveToDB(model:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D6A1E68-00D5-4C7F-B001-3F1EED67D0A1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2F6EC2A-0253-4859-A7AD-B8C5BD705D56"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2F6EC2A-0253-4859-A7AD-B8C5BD705D56 - b3d295a2fb00787e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.MainViewModels.Case.NewsResponse, NewsApp_Task.MainViewModels.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.DetailViewInteractor.checkIsNewFav() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "C2F6EC2A-0253-4859-A7AD-B8C5BD705D56 - b3d295a2fb00787e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.MainViewModels.Case.NewsResponse, NewsApp_Task.MainViewModels.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.DetailViewInteractor.checkIsNewFav() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "886E688E-C2DE-431F-AF44-0ECFE926807F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "886E688E-C2DE-431F-AF44-0ECFE926807F - b3d295a2fb00787e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.MainViewModels.Case.NewsResponse, NewsApp_Task.MainViewModels.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.DetailViewInteractor.checkIsNewFav() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "886E688E-C2DE-431F-AF44-0ECFE926807F - b3d295a2fb00787e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.MainViewModels.Case.NewsResponse, NewsApp_Task.MainViewModels.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.DetailViewInteractor.checkIsNewFav() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B682497-088A-47CD-B389-711F9DD5A139"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB664F5E-6EA2-41CE-893F-95DB16D82A5F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "374A53E5-4257-453D-94F6-08CA05080C00"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A5A4176-0D9E-48B9-B2D1-00DF2DD427D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ADF33103-D978-4EE3-AD1A-2C269F76DDB2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E606BCC-EFD1-4D78-8640-58DBAC61E6EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "checkIsNewFav()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E606BCC-EFD1-4D78-8640-58DBAC61E6EE - b3d295a2fb007830"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.MainViewModels.Case.NewsResponse, NewsApp_Task.MainViewModels.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.DetailViewInteractor.checkIsNewFav() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "2E606BCC-EFD1-4D78-8640-58DBAC61E6EE - b3d295a2fb007830"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.MainViewModels.Case.NewsResponse, NewsApp_Task.MainViewModels.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.DetailViewInteractor.checkIsNewFav() -&gt; ()"
+                  moduleName = "NewsApp-Task"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Scenes/DetailView/DetailViewInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86E0267A-36E0-4577-8959-D4B06410B154"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewWorker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "deleteFromDB(model:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52162A1F-1238-47E7-9296-272975754FB3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewsApp-Task/Scenes/DetailView/DetailViewWorker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "deleteFromDB(model:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

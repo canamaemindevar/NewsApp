@@ -15,20 +15,23 @@ protocol MainViewWorkingLogic: AnyObject {
 
 final class MainViewWorker: MainViewWorkingLogic {
 
-    var networManager = NewNetworkManager.shared
-    var localDBManager = LocalDBManager.shared
+    var networManager: NewsRepositoryInterface?
+    var localDBManager: LocalDBManagerInterface?
+
+    init(networManager: NewsRepositoryInterface? = nil, localDBManager: LocalDBManagerInterface? = LocalDBManager()) {
+        self.networManager = networManager ?? NewsRepository()
+        self.localDBManager = localDBManager
+    }
 
     func getHeadLines(completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void) {
-        let endPoint = Endpoint.topHeadlines
-        networManager.request(endPoint, completion: completion)
+        networManager?.getHeadLines(completion: completion)
     }
 
     func makeQuery(word: String,completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void) {
-        let endpoint = Endpoint.query(query: word)
-        networManager.request(endpoint, completion: completion)
+        networManager?.makeQuery(word: word, completion: completion)
     }
 
     func fetchFromDb(completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void) {
-        localDBManager.fetchModel(completion: completion)
+        localDBManager?.fetchModel(completion: completion)
     }
 }

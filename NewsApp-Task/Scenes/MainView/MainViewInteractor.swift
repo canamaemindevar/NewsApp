@@ -29,15 +29,8 @@ final class MainViewInteractor: MainViewBusinessLogic, MainViewDataStore {
 
     func getHeadLines() {
         Spinner.start()
-        worker.getHeadLines { [weak self] response  in
-            switch response {
-                case .success(let success):
-                    self?.newsArray = success
-                    self?.presenter?.handleResponse(news: self?.newsArray)
-                case .failure(let failure):
-                    self?.presenter?.handleError()
-                    print(failure)
-            }
+        worker.getHeadLines { [weak self] response in
+            self?.handleNewsResponse(response: response)
             Spinner.stop()
         }
     }
@@ -45,28 +38,25 @@ final class MainViewInteractor: MainViewBusinessLogic, MainViewDataStore {
     func makeQuery(word: String) {
         Spinner.start()
         worker.makeQuery(word: word) { [weak self] response in
-            switch response {
-                case .success(let success):
-                    self?.newsArray = success
-                    self?.presenter?.handleResponse(news: self?.newsArray)
-                case .failure(let failure):
-                    self?.presenter?.handleError()
-                    print(failure)
-            }
+            self?.handleNewsResponse(response: response)
             Spinner.stop()
         }
     }
 
     func fetchFromDb() {
         worker.fetchFromDb { [weak self] response in
-            switch response {
-                case .success(let success):
-                    self?.newsArray = success
-                    self?.presenter?.handleResponse(news: self?.newsArray)
-                case .failure(let failure):
-                    self?.presenter?.handleError()
-                    print(failure)
-            }
+            self?.handleNewsResponse(response: response)
+        }
+    }
+
+    private func handleNewsResponse(response: Result<NewsResponse, NewsAppErrors>) {
+        switch response {
+            case .success(let success):
+                self.newsArray = success
+                self.presenter?.handleResponse(news: self.newsArray)
+            case .failure(let failure):
+                self.presenter?.handleError()
+                print(failure)
         }
     }
 }

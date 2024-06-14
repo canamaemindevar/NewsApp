@@ -15,17 +15,21 @@ protocol DetailViewWorkingLogic: AnyObject {
 
 final class DetailViewWorker: DetailViewWorkingLogic {
     
-    var localDBManager = LocalDBManager.shared
+    var localDBManager: LocalDBManagerInterface?
+
+    init(localDBManager: LocalDBManagerInterface? = LocalDBManager()) {
+        self.localDBManager = localDBManager
+    }
 
     func saveToDB(model: Article) {
-        localDBManager.saveModel(with: model)
+        localDBManager?.saveModel(with: model)
     }
 
     func deleteFromDB(model: Article) {
-        localDBManager.deleteModel(with: model)
+        localDBManager?.deleteModel(with: model)
     }
 
     func fetchFromDb(completion: @escaping (Result<NewsResponse, NewsAppErrors>) -> Void) {
-        localDBManager.fetchModel(completion: completion)
+        localDBManager?.fetchModel(completion: completion)
     }
 }
