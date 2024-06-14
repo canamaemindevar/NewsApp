@@ -20,13 +20,16 @@
 		A912CBBA2A576C100007863B /* DataSourceForMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBB92A576C100007863B /* DataSourceForMainView.swift */; };
 		A912CBC22A57FD170007863B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBC02A57FD170007863B /* WebViewController.swift */; };
 		A912CBC32A57FD170007863B /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A912CBC12A57FD170007863B /* WebViewController.xib */; };
-		A912CBC52A580FE80007863B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBC42A580FE80007863B /* NetworkManager.swift */; };
+		A912CBC52A580FE80007863B /* CoreNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBC42A580FE80007863B /* CoreNetworkManager.swift */; };
 		A912CBC72A5810230007863B /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBC62A5810230007863B /* NetworkHelpers.swift */; };
 		A912CBC92A5810850007863B /* NewsAppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBC82A5810850007863B /* NewsAppErrors.swift */; };
 		A912CBCC2A581FF80007863B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A912CBCB2A581FF80007863B /* SDWebImage */; };
 		A912CBCE2A58200D0007863B /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBCD2A58200D0007863B /* UIImageView+Extensions.swift */; };
 		A912CBD02A5821470007863B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBCF2A5821470007863B /* UIView+Extensions.swift */; };
 		A912CBD32A5831770007863B /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A912CBD22A5831770007863B /* NewsResponse.swift */; };
+		A98C6A0D2C1C65F100DD58BB /* NewsRepositoryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C6A0C2C1C65F100DD58BB /* NewsRepositoryInterface.swift */; };
+		A98C6A0F2C1C664700DD58BB /* MockNewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C6A0E2C1C664700DD58BB /* MockNewsRepository.swift */; };
+		A98C6A112C1C667000DD58BB /* NewsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C6A102C1C667000DD58BB /* NewsRepository.swift */; };
 		A99C891D2A5BEDEA00FBE166 /* LocalDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C891C2A5BEDEA00FBE166 /* LocalDBManager.swift */; };
 		A99C891F2A5BFAF700FBE166 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C891E2A5BFAF700FBE166 /* UITableView+Extensions.swift */; };
 		A99C89232A5BFBF600FBE166 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99C89212A5BFBF600FBE166 /* NewsTableViewCell.swift */; };
@@ -54,12 +57,15 @@
 		A912CBB92A576C100007863B /* DataSourceForMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceForMainView.swift; sourceTree = "<group>"; };
 		A912CBC02A57FD170007863B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		A912CBC12A57FD170007863B /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
-		A912CBC42A580FE80007863B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A912CBC42A580FE80007863B /* CoreNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNetworkManager.swift; sourceTree = "<group>"; };
 		A912CBC62A5810230007863B /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
 		A912CBC82A5810850007863B /* NewsAppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppErrors.swift; sourceTree = "<group>"; };
 		A912CBCD2A58200D0007863B /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		A912CBCF2A5821470007863B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		A912CBD22A5831770007863B /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
+		A98C6A0C2C1C65F100DD58BB /* NewsRepositoryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepositoryInterface.swift; sourceTree = "<group>"; };
+		A98C6A0E2C1C664700DD58BB /* MockNewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsRepository.swift; sourceTree = "<group>"; };
+		A98C6A102C1C667000DD58BB /* NewsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepository.swift; sourceTree = "<group>"; };
 		A99C891C2A5BEDEA00FBE166 /* LocalDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDBManager.swift; sourceTree = "<group>"; };
 		A99C891E2A5BFAF700FBE166 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		A99C89212A5BFBF600FBE166 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		A912CB8C2A575C5E0007863B /* NewsApp-Task */ = {
 			isa = PBXGroup;
 			children = (
+				A98C6A0B2C1C65C800DD58BB /* Repository */,
 				A99C89202A5BFBD800FBE166 /* Cell */,
 				A912CBD12A58316F0007863B /* Models */,
 				A912CBB82A576C020007863B /* Enums */,
@@ -162,7 +169,7 @@
 		A912CBA52A575CE80007863B /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				A912CBC42A580FE80007863B /* NetworkManager.swift */,
+				A912CBC42A580FE80007863B /* CoreNetworkManager.swift */,
 				A912CBC62A5810230007863B /* NetworkHelpers.swift */,
 			);
 			path = NetworkManager;
@@ -259,6 +266,16 @@
 				A912CBD22A5831770007863B /* NewsResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A98C6A0B2C1C65C800DD58BB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A98C6A0C2C1C65F100DD58BB /* NewsRepositoryInterface.swift */,
+				A98C6A0E2C1C664700DD58BB /* MockNewsRepository.swift */,
+				A98C6A102C1C667000DD58BB /* NewsRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		A99C89202A5BFBD800FBE166 /* Cell */ = {
@@ -367,8 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A912CBC52A580FE80007863B /* NetworkManager.swift in Sources */,
+				A912CBC52A580FE80007863B /* CoreNetworkManager.swift in Sources */,
 				A99C891D2A5BEDEA00FBE166 /* LocalDBManager.swift in Sources */,
+				A98C6A0F2C1C664700DD58BB /* MockNewsRepository.swift in Sources */,
 				A9CEC67B2C03831900B14804 /* ErroHandleViewBuilder.swift in Sources */,
 				A912CB922A575C5E0007863B /* MainViewController.swift in Sources */,
 				A99C892E2A5C147600FBE166 /* ArticleModel.xcdatamodeld in Sources */,
@@ -383,12 +401,14 @@
 				A912CBD32A5831770007863B /* NewsResponse.swift in Sources */,
 				A912CBCE2A58200D0007863B /* UIImageView+Extensions.swift in Sources */,
 				A912CBAB2A5760030007863B /* TabbarController.swift in Sources */,
+				A98C6A0D2C1C65F100DD58BB /* NewsRepositoryInterface.swift in Sources */,
 				A912CBBA2A576C100007863B /* DataSourceForMainView.swift in Sources */,
 				A912CB902A575C5E0007863B /* SceneDelegate.swift in Sources */,
 				A99C89232A5BFBF600FBE166 /* NewsTableViewCell.swift in Sources */,
 				A912CBC72A5810230007863B /* NetworkHelpers.swift in Sources */,
 				A912CBC22A57FD170007863B /* WebViewController.swift in Sources */,
 				A9CEC6762C0382BD00B14804 /* Spinner.swift in Sources */,
+				A98C6A112C1C667000DD58BB /* NewsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

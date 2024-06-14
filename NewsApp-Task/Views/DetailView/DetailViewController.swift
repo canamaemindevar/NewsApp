@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DetailViewController: UIViewController {
+final class DetailViewController: BaseViewController {
     
     //MARK: - Components
     
@@ -19,11 +19,12 @@ final class DetailViewController: UIViewController {
     @IBOutlet weak var segueToWebView: UIButton!
     
     var article: Article
-
+    var localDBManager: LocalDBManagerInterface?
     //MARK: - Life Cycle
     
-    init(article:Article){
+    init(article:Article, localDBManager: LocalDBManagerInterface? = LocalDBManager()){
         self.article = article
+        self.localDBManager = localDBManager
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -67,17 +68,17 @@ private extension DetailViewController {
     
     @objc private func makeFav() {
         
-         LocalDBManager.shared.fetchModel(completion: { response in
+         localDBManager?.fetchModel(completion: { response in
              switch response {
              case .success(let success):
                  
                  guard let articless = success.articles else {return}
                  if self.containsArticle(articless, self.article) {
 
-                     LocalDBManager.shared.deleteModel(with: self.article)
+                     self.localDBManager?.deleteModel(with: self.article)
 
                  }else {
-                     LocalDBManager.shared.saveModel(with: self.article)
+                     self.localDBManager?.saveModel(with: self.article)
                  }
                  
              case .failure(_):

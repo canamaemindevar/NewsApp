@@ -8,11 +8,13 @@
 import CoreData
 import UIKit
 
-struct LocalDBManager {
+protocol LocalDBManagerInterface {
+    func fetchModel(completion: @escaping ((Result<NewsResponse,NewsAppErrors>) -> Void))
+    func saveModel(with model: Article)
+    func deleteModel(with model: Article)
+}
 
-    static let shared = LocalDBManager()
-
-    private init() {}
+struct LocalDBManager: LocalDBManagerInterface {
 
     func fetchModel(completion: @escaping ((Result<NewsResponse,NewsAppErrors>) -> Void)) {
 
