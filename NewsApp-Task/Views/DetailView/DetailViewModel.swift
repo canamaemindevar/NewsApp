@@ -9,19 +9,25 @@ import Foundation
 
 final class DetailViewModel: ViewModel {
 
+    var localDBManager: LocalDBManagerInterface?
+
+    init(localDBManager: LocalDBManagerInterface? = LocalDBManager()) {
+        self.localDBManager = localDBManager
+    }
+
     func makeFav(article: Article) {
         
-        LocalDBManager.shared.fetchModel(completion: { response in
+        localDBManager?.fetchModel(completion: { response in
             switch response {
                 case .success(let success):
 
                     guard let articless = success.articles else {return}
                     if self.containsArticle(articless, article) {
 
-                        LocalDBManager.shared.deleteModel(with: article)
+                        self.localDBManager?.deleteModel(with: article)
 
                     }else {
-                        LocalDBManager.shared.saveModel(with: article)
+                        self.localDBManager?.saveModel(with: article)
                     }
 
                 case .failure(_):

@@ -12,39 +12,43 @@ final class MainViewModel: ViewModel{
     var succesCompletion: ((NewsResponse) -> Void)?
     var failCompleetion: (() -> Void)?
 
+    var networkManager: NewsRepositoryInterface?
+    var localDBManager: LocalDBManagerInterface?
+
+    init(networkManager: NewsRepositoryInterface? = nil,
+         localDBManager: LocalDBManagerInterface? = LocalDBManager()) {
+        self.networkManager = networkManager ?? NewsRepository()
+        self.localDBManager = localDBManager
+    }
 
     func getFavsFromDb() {
-        LocalDBManager.shared.fetchModel { response in
-            switch response {
-                case .success(let success):
-                    self.succesCompletion?(success)
-                case .failure(_):
-                    self.failCompleetion?()
-            }
+        localDBManager?.fetchModel {[ weak self] response in
+            self?.handleNewsResponse(response: response)
         }
     }
 
     func getHeadlines() {
         Spinner.start()
-        NewNetworkManager.shared.getHeadLines { response in
-            switch response {
-                case .success(let success):
-                    self.succesCompletion?(success)
-                case .failure(_):
-                    self.failCompleetion?()
-            }
+        networkManager?.getHeadLines { [ weak self] response in
+            self?.handleNewsResponse(response: response)
             Spinner.stop()
         }
     }
 
     func makeQuery(text: String) {
-        NewNetworkManager.shared.makeQuery(word: text) { response in
-            switch response {
-                case .success(let success):
-                    self.succesCompletion?(success)
-                case .failure(_):
-                    self.failCompleetion?()
-            }
+        Spinner.start()
+        networkManager?.makeQuery(word: text, completion: {[ weak self] response in
+            self?.handleNewsResponse(response: response)
+            Spinner.stop()
+        })
+    }
+
+    private func handleNewsResponse(response: Result<NewsResponse, NewsAppErrors>) {
+        switch response {
+            case .success(let success):
+                self.succesCompletion?(success)
+            case .failure(_):
+                self.failCompleetion?()
         }
     }
 }

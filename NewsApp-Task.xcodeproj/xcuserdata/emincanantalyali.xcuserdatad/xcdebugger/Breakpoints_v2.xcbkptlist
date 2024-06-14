@@ -14,8 +14,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "request(_:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "request(_:completion:)"
             landmarkType = "7">
             <Locations>
@@ -108,8 +108,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "request(_:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -124,8 +124,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "handleResponse(data:compeltion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -140,8 +140,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "handleResponse(data:compeltion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -156,8 +156,8 @@
             filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "handleResponse(data:compeltion:)"
             landmarkType = "7">
             <Locations>
@@ -235,8 +235,8 @@
             filePath = "NewsApp-Task/Managers/LocalDBManager/LocalDBManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "saveModel(with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -299,9 +299,9 @@
             filePath = "NewsApp-Task/Views/MainView/MainViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getHeadlines()"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getFavsFromDb()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -410,9 +410,9 @@
             filePath = "NewsApp-Task/Views/MainView/MainViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "getHeadlines()"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getFavsFromDb()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -506,22 +506,6 @@
                   offsetFromSymbolStart = "96">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "64AB33AF-02C8-43E1-90D4-C54D3663B9F1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewsApp-Task/Managers/NetworkManager/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "getHeadLines(completion:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -628,54 +612,6 @@
                   startingLineNumber = "69"
                   endingLineNumber = "69"
                   offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "45AEFC4E-C5DF-45F2-AB34-F11A01CC4FB0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NewsApp-Task/Views/MainView/MainViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "makeQuery(text:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "45AEFC4E-C5DF-45F2-AB34-F11A01CC4FB0 - 6c564f50dea82b6a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
-                  moduleName = "NewsApp-Task"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "100">
-               </Location>
-               <Location
-                  uuid = "45AEFC4E-C5DF-45F2-AB34-F11A01CC4FB0 - 6c564f50dea82dd6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;NewsApp_Task.NewsResponse, NewsApp_Task.NewsAppErrors&gt;) -&gt; () in NewsApp_Task.MainViewModel.makeQuery(text: Swift.String) -&gt; ()"
-                  moduleName = "NewsApp-Task"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/emincanantalyali/Desktop/SwiftDenemeler/NewsApp/NewsApp-Task/Views/MainView/MainViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "100">
                </Location>
             </Locations>
          </BreakpointContent>
